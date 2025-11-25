@@ -17,13 +17,9 @@ K-Means Clustering – Customer Segmentation
 *Common columns:
 
     CustomerID
-
     Gender
-
     Age
-
     Annual Income (k$)
-
     Spending Score (1–100)
 
 *Popular features for clustering:
@@ -52,25 +48,28 @@ K-Means Clustering – Customer Segmentation
 5. Project Workflow
     Step 1: Load the dataset & Standardize features
 
-    CustomerID  Gender  Age  Annual Income (k$)  Spending Score (1-100)
-0           1    Male   19                  15                      39
-1           2    Male   21                  15                      81
-2           3  Female   20                  16                       6
-3           4  Female   23                  16                      77
-4           5  Female   31                  17                      40
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 200 entries, 0 to 199
-Data columns (total 5 columns):
- #   Column                  Non-Null Count  Dtype 
----  ------                  --------------  ----- 
- 0   CustomerID              200 non-null    int64 
- 1   Gender                  200 non-null    object
- 2   Age                     200 non-null    int64 
- 3   Annual Income (k$)      200 non-null    int64 
- 4   Spending Score (1-100)  200 non-null    int64 
-dtypes: int64(4), object(1)
-memory usage: 7.9+ KB
-None
+            CustomerID  Gender  Age  Annual Income (k$)  Spending Score (1-100)
+       0           1    Male   19                  15                      39
+       1           2    Male   21                  15                      81
+       2           3  Female   20                  16                       6
+       3           4  Female   23                  16                      77
+       4           5  Female   31                  17                      40
+
+        <class 'pandas.core.frame.DataFrame'>
+        RangeIndex: 200 entries, 0 to 199
+
+        Data columns (total 5 columns):
+       #   Column                  Non-Null Count  Dtype 
+       ---  ------                  --------------  ----- 
+       0   CustomerID              200 non-null    int64 
+       1   Gender                  200 non-null    object
+       2   Age                     200 non-null    int64 
+       3   Annual Income (k$)      200 non-null    int64 
+       4   Spending Score (1-100)  200 non-null    int64 
+
+        dtypes: int64(4), object(1)
+        memory usage: 7.9+ KB
+        None
   
     Step 2: Use Elbow Method to choose K
     <img width="571" height="455" alt="82d8f88d-eed2-4ed8-8ba9-ba2497c3041a" src="https://github.com/user-attachments/assets/33952b9e-0310-4b12-837d-0f213624c333" />
